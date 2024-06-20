@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 app.get('/', (req, res) => {
-  res.send('Hello Prototytpe World!')
+  res.send('Hello Prototytpe World! ' + new Date())
 })
 app.get('/about', function (request, response) {
         response.send('About Us');
